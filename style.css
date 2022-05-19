@@ -1,0 +1,35 @@
+@charset "utf=8";
+/* 웹폰트 지정 */
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Goobal */
+:root {
+    /* Color */
+    --color-gray: #848484;
+    --color-light-purple: #bdb2ff;
+    --color-black: #000000;
+    --color-light-pink: #e7b2ff;
+
+    /* Font size */
+    --font-large: 48px;
+    --font-medium: 28px;
+    --font-regular: 18px;
+    --font-small: 16px;
+    --font-micro: 14px;
+
+    /* Font weight */
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
+
+}
+
+/* Universal tags */
+* {
+    box-sizing: border-box; /* 넓이와 높이가 패딩을 포함해도 동일한 사이즈가 되도록 설정 */
+}
