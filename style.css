@@ -52,6 +52,7 @@ html, body {
     padding: 0;
     font-family: Black Han Sans;
     background-color: var(--color-beige);
+    overflow-x: hidden;
 }
 
 body {
@@ -154,11 +155,3 @@ main {
         background-color: var(--color-lemon);
     }
 }
-
-/* @media screen and (min-width: 1000px) {
-    .item { 
-        border-color: var(--color-middle-green);
-        background-color: var(--color-light-gray);
-    
-    }
-} */
