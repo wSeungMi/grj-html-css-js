@@ -12,6 +12,10 @@ function addItem(name, img, description) {
     newDiv.innerHTML = `<img src="${img}" alt="${name}" />
                         <span>${description}</span>`; // 새로운 내용들을 newDiv로 넣어줌
     document.querySelector(".container").appendChild(newDiv);
+
+    const newSpan = document.createElement("span"); // 빈 span 생성
+    newSpan.innerHTML = `<span>${name}</span>`;
+    document.querySelector(".sidebar").appendChild(newSpan);
 }
 
 function addItemBtn(event) {
