@@ -7,19 +7,42 @@
     <title>고량주</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/png" href="./img/favicon.png" />
+    <script src="./modal.js" defer/></script>
+    <script src="./addItem.js" defer/></script>
 </head>
 <body>
     <header id="header">
-        <span class="title">고량주(사이에서 음료 즐기기)</span>
+        <span class="title">DRINK +</span>
     </header>
+
     <main>
         <aside class="sidebar">
+            <button id="addItem" class="btn-add">추가</button> <!--아이템 추가버튼-->
             <span>술</span>
             <span>버블티</span>
             <span>커피</span>
             <span>초코우유</span>
             <span>차</span>
         </aside>
+
+    <!--모달창-->
+   
+    <div id="modal" class="modal-wrapper">
+        <div id="modalOverlay" class="modal-overlay"></div>
+        <form id="addItemForm" class="modal-content">
+            <span id="closeModal" class="close-btn">X</span>
+            <!--label의 for="" - input의 id=""-->
+            <label for="modalName" class="modal-label">이름</label>
+            <input type="text" id="modalName" class="modal-input" maxlength="12" placeholder="음료 이름을 적어주세요." required />
+            <label for="modalImg" class="modal-label">이미지</label>
+            <input type="text" id="modalImg" class="modal-input" placeholder="이미지 URL을 적어주세요." required />
+            <label for="modalContent" class="modal-label">내용</label>
+            <input type="text" id="modalContent" class="modal-input" placeholder="내용을 적어주세요." required />
+            <button type="submit" class="submit-btn">저장</button>
+        </form>
+    </div>
+
+
         <section class="container">
             <div class="item">
                 <img src="./img/beer.png" alt="beer img" />
