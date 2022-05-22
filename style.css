@@ -125,7 +125,7 @@ main {
 .btn-add {
     background-color: var(--color-yellow);
     border: 3px solid var(--color-dark-blue);
-    font-size: var(--font-small);
+    font-size: var(--font-basic);
     color: var(--color-dark-blue);
     padding: 10px; /* 상-하, 좌-우*/
     font-family: 양진체;
